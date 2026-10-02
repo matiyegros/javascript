@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cambiar color de fondo</title>
+</head>
+<body>
+
+    <h1>Cambiar color de fondo</h1>
+
+    <button onclick="cambiarColor('lightblue')">Azul</button>
+    <button onclick="cambiarColor('lightgreen')">Verde</button>
+    <button onclick="cambiarColor('lightcoral')">Rojo</button>
+    <button onclick="resetear()">Resetear</button>
+
+    <script>
+        function cambiarColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+
+        function resetear() {
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+
+</body>
+</html>

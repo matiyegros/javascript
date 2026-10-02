@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador de clics</title>
+</head>
+<body>
+
+    <h1 id="contador">0</h1>
+
+    <button onclick="sumar()">+</button>
+    <button onclick="restar()">-</button>
+
+    <script>
+        let valor = 0;
+
+        function sumar() {
+            valor = valor + 1;
+            document.getElementById("contador").textContent = valor;
+        }
+
+        function restar() {
+            if (valor > 0) {
+                valor = valor - 1;
+                document.getElementById("contador").textContent = valor;
+            }
+        }
+    </script>
+
+</body>
+</html>
